@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+</head>
+<body class="hot">
+    <div class="weather">
+        <div class="weather__search">
+            <input class="weather__input" type="text" placeholder="Search...">
+        </div>      
+        <div class="weather__position">
+            <h3 class="city">Hanoi</h3>
+            <span>,</span>
+            <h3 class="country">VN</h3>
+        </div>
+        <div class="weather__time">
+            <span class="hour">21:27:30</span>
+            <span>,</span>
+            <span class="day">18/3/2022</span>
+        </div>
+        <div class="weather__temperature">
+                <span class="number">25</span>
+                <span class="text">
+                    <sup>o</sup>C
+                </span>
+        </div>
+        <div class="weather__short-desc">
+            <span class="weather__short-desc-title">Clouds</span>
+        </div>
+        <div class="weather__more-desc">
+            <div class="visibility">
+                <i class="visibility__icon fa-solid fa-eye"></i>
+                <div class="visibility__data">
+                    <span class="visibility__data-number">
+                        10000
+                    </span>
+                    <span class="visibility__data-text">
+                        (m)
+                    </span>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="wind__icon fa-solid fa-wind"></i>
+                <div class="wind__data">
+                    <span class="wind__data-number">
+                        4.9
+                    </span>
+                    <span class="wind__data-text">
+                        m/s
+                    </span>
+                </div>
+            </div>
+            <div class="humidity">
+                <i class="humidity__icon fa-solid fa-cloud-sun"></i>
+                <div class="humidity">
+                    <span class="humidity__data-number">
+                        78
+                    </span>
+                    <span class="humidity__data-text">
+                        (%)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./handling.js"></script>
+</body>
+</html>

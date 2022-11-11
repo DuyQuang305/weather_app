@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hot {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(https://www.nodemy.vn/projects/html-css-js/weather-app/hot.png) no-repeat center/cover;
+}
+
+.warm {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./img/warm1jfif.jfif) no-repeat center/cover;
+}
+
+.cool {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./img/cool.jfif) no-repeat center/cover;
+}
+
+.hot .weather {
+    width: 350px;
+    background-image: url(	https://www.nodemy.vn/projects/html-css-js/weather-app/hot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.warm .weather {
+    width: 350px;
+    background-image: url(./img/warm1jfif.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.cool .weather {
+    width: 350px;
+    background-image: url(./img/cool.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.weather__search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather__search input {
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+    border: 0px solid;
+    outline: none;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 0 15px 0 15px;
+    font-size: 1.9rem;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.weather__search input:focus {
+    border-radius: 15px 0 15px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.weather__position {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    line-height: 3rem;
+}
+
+.weather__time {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 14px;
+}
+
+.weather__temperature {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+    padding: 26px 0 40px;
+    margin: 30px 40px ;
+    border-radius: 12px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.weather__temperature span {
+    height: 100%;
+    font-weight: bold;
+    font-size: 6.5rem;
+    font-weight: 800;
+    line-height: 6rem;
+    text-shadow: 5px 4px  rgba(0, 0, 0, 0.5);
+}
+
+.weather__temperature span:nth-child(2) {
+    margin-left: 20px;
+}
+
+.weather__temperature .text {
+    width: 0;
+}
+
+
+.weather__short-desc {
+    width: 100%;
+    margin: 34px 0 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.weather__more-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 1.6rem;
+    margin:  14px 0 48px;
+}
+
+.visibility, .wind, .humidity {
+    text-align: center;
+}
+
+.visibility__icon, .wind__icon, .humidity__icon {
+    margin-bottom: 17px;
+}
+
